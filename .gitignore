@@ -1,0 +1,48 @@
+#Enviroment Files
+.Enviroment
+
+#Dependencies
+/vendor/
+node_modules/
+
+#Compiled C binaries
+/server/c/compiled/char_server
+/server/c/*.o
+/server/c/*.out
+
+#Logs
+/logs/*.logs
+/logs/*.txt
+
+#Temporary Files
+/temp/
+/tmp/
+
+#IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+#OS Files
+.DS_Store
+Thumbs.db
+
+#Uplods
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+#Cache
+/cache/
+
+#Session Files (if file-based)
+/sessions/
+
+#Backup Files
+*.sql.gz
+*.tar.gz
+*.zip
+
+#Composer
+composer.lock
