@@ -1,48 +1,46 @@
-#Enviroment Files
+# Environment files
 .env
+.env.local
+.env.production
 
-#Dependencies
+# Dependencies
 /vendor/
-node_modules/
+/node_modules/
 
-#Compiled C binaries
-/server/c/compiled/char_server
+# Compiled C binaries
+/server/c/compiled/chat_server
 /server/c/*.o
 /server/c/*.out
 
-#Logs
-/logs/*.logs
+# Logs
+/logs/*.log
 /logs/*.txt
 
-#Temporary Files
+# Temporary files
 /temp/
 /tmp/
 
-#IDE Files
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-#OS Files
+# OS files
 .DS_Store
 Thumbs.db
 
-#Uplods
+# Uploads
 /public/uploads/*
 !/public/uploads/.gitkeep
 
-#Cache
+# Cache
 /cache/
 
-#Session Files (if file-based)
-/sessions/
+# Backup
+/backups/*.sql
+/backups/*.gz
 
-#Backup Files
-*.sql.gz
-*.tar.gz
-*.zip
-
-#Composer
-composer.lock
+# Docker
+docker-compose.override.yml
