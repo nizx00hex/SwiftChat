@@ -75,17 +75,22 @@ cd swiftchat
 ```
 ##  Project Structure
 
+## 📁 Project Structure
+
+```text
 swiftchat/
 ├── public/          # Web files & templates
-├── server/php/      # PHP backend
-├── server/c/        # C WebSocket server
+├── server/
+│   ├── php/         # PHP backend
+│   └── c/           # C WebSocket server
 ├── admin/           # Admin panel
-├── security/        # 12 security modules
+├── security/        # Security modules
 ├── config/          # Configuration files
 ├── database/        # Schema & migrations
 ├── scripts/         # Utility scripts
 ├── tests/           # Test files
 └── docs/            # Documentation
+```
 
 ##  Security
 
