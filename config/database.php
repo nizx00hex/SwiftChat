@@ -4,7 +4,7 @@
  */
 
 // Load environment variables
-$env = parse_ini_file(__DIR__ . '/../.env');
+// $env = parse_ini_file(__DIR__ . '/../.env');
 
 class Database {
     private static $instance = null;
@@ -15,7 +15,14 @@ class Database {
         $port = getenv('DB_PORT') ?: '3306';
         $database = getenv('DB_DATABASE') ?: 'swiftchat';
         $username = getenv('DB_USERNAME') ?: 'root';
-        $password = getenv('DB_PASSWORD') ?: '';
+        $password = getenv('DB_PASSWORD') ?: 'X98B$aN2w8-%,Rvw'; //
+        // $host = $env['DB_HOST'] ?? 'localhost';
+        // $port = $env['DB_PORT'] ?? '3306';
+        // $database = $env['DB_DATABASE'] ?? 'swiftchat';
+        // $username = $env['DB_USERNAME'] ?? 'root';
+        // $password = $env['DB_PASSWORD'] ?? '';
+        // var_dump($username, $password);
+        // exit;
         
         $this->connection = new mysqli($host, $username, $password, $database, $port);
         
